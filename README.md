@@ -8,5 +8,5 @@
 
 code for the relevant Tasks. 
 
-(The course page)[https://tai-e.pascal-lab.net/] 
+ [The course page](https://tai-e.pascal-lab.net/) 
 
