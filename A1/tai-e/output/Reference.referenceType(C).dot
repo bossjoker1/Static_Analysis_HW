@@ -1,0 +1,16 @@
+digraph G {
+  node [shape=box,style=filled,color=".3 .2 1.0",];
+  "0" [label="Entry<Reference: A referenceType(C)>",];
+  "1" [label="0: temp$0 = new B",];
+  "2" [label="1: <Reference: A referenceType(C)>[1@L24] invokespecial temp$0.<init>()",];
+  "3" [label="2: b = temp$0",];
+  "4" [label="3: <Reference: A referenceType(C)>[3@L25] invokevirtual b.setC(c)",];
+  "5" [label="4: return b",];
+  "6" [label="Exit<Reference: A referenceType(C)>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "3" [label="FALL_THROUGH",];
+  "3" -> "4" [label="FALL_THROUGH",];
+  "4" -> "5" [label="FALL_THROUGH",];
+  "5" -> "6" [label="RETURN",];
+}

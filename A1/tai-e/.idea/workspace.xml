@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b1bc4c4f-d392-42b6-89a5-a55e85b59886" name="Default Changelist" comment="finished Task 1" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2IRVS0LIXO5DlE7EGj4jfMZGRb4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Tai-e_HW" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Assignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pascal.taie.Assignment" />
+      <module name="tai-e.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pascal.taie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Assignment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1bc4c4f-d392-42b6-89a5-a55e85b59886" name="Default Changelist" comment="" />
+      <created>1670144378207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670144378207</updated>
+    </task>
+    <task id="LOCAL-00001" summary="finished Task 1">
+      <created>1670672586267</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670672586267</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished Task 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished Task 1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="340" y="0" width="612" height="760" key="#Assignment" timestamp="1670551823690">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="340" y="0" width="612" height="760" key="#Assignment/0.0.1280.760@0.0.1280.760" timestamp="1670551823690" />
+    <state x="121" y="0" key="#Project_Structure" timestamp="1670513772245">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.760@0.0.1280.760" timestamp="1670513772245" />
+    <state x="96" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1670551905463">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="96" y="35" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1670551905463" />
+    <state x="422" y="86" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1670551900348">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="422" y="86" key="#com.intellij.ide.macro.MacrosDialog/0.0.1280.760@0.0.1280.760" timestamp="1670551900348" />
+    <state x="446" y="86" key="#com.intellij.ide.util.MemberChooser" timestamp="1670655157205">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="446" y="86" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1670655157205" />
+    <state x="418" y="247" width="442" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1670585672432">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="418" y="247" width="442" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1670585672432" />
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1670673873273">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1670673873273" />
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1670551941347">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1670551941347" />
+    <state width="1238" height="190" key="GridCell.Tab.0.center" timestamp="1670551941347">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1670551941347" />
+    <state width="1238" height="190" key="GridCell.Tab.0.left" timestamp="1670551941347">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1670551941347" />
+    <state width="1238" height="190" key="GridCell.Tab.0.right" timestamp="1670551941347">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1670551941347" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1670680431008">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1670680431008" />
+    <state x="233" y="113" key="Vcs.Push.Dialog.v2" timestamp="1670672607901">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1670672607901" />
+    <state x="370" y="136" key="refactoring.ChangeSignatureDialog" timestamp="1670637589043">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="370" y="136" key="refactoring.ChangeSignatureDialog/0.0.1280.760@0.0.1280.760" timestamp="1670637589043" />
+    <state x="299" y="172" key="run.anything.popup" timestamp="1670661514670">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="299" y="172" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1670661514670" />
+  </component>
+</project>
