@@ -1,0 +1,29 @@
+digraph G {
+  node [style=filled,color=".3 .2 1.0",shape=box,];
+  "0" [label="Entry<SimpleBranch: void NAC(int)>",];
+  "1" [label="0: %intconst0 = 0",];
+  "2" [label="1: if (p > %intconst0) goto 3",];
+  "3" [label="2: goto 6",];
+  "4" [label="3: nop",];
+  "5" [label="4: x = 1",];
+  "6" [label="5: goto 8",];
+  "7" [label="6: nop",];
+  "8" [label="7: x = 2",];
+  "9" [label="8: nop",];
+  "10" [label="9: y = x",];
+  "11" [label="10: return",];
+  "12" [label="Exit<SimpleBranch: void NAC(int)>",];
+  "0" -> "1" [label="ENTRY",];
+  "1" -> "2" [label="FALL_THROUGH",];
+  "2" -> "4" [label="IF_TRUE",];
+  "2" -> "3" [label="IF_FALSE",];
+  "3" -> "7" [label="GOTO",];
+  "4" -> "5" [label="FALL_THROUGH",];
+  "5" -> "6" [label="FALL_THROUGH",];
+  "6" -> "9" [label="GOTO",];
+  "7" -> "8" [label="FALL_THROUGH",];
+  "8" -> "9" [label="FALL_THROUGH",];
+  "9" -> "10" [label="FALL_THROUGH",];
+  "10" -> "11" [label="FALL_THROUGH",];
+  "11" -> "12" [label="RETURN",];
+}
