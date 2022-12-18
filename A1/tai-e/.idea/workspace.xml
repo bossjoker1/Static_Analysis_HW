@@ -20,27 +20,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1bc4c4f-d392-42b6-89a5-a55e85b59886" name="Default Changelist" comment="finished Task 1">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/Assignment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/ResultProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/StmtResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/analysis/AbstractDataflowAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/analysis/DataflowAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/analysis/LiveVariableAnalysis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/fact/DataflowResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/fact/NodeResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/fact/SetFact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/solver/IterativeSolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/dataflow/solver/Solver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/graph/callgraph/CallGraphBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/analysis/graph/cfg/CFG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/ir/exp/Exp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/ir/exp/Var$RelevantStmts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/ir/exp/Var.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/ir/stmt/Stmt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/util/graph/Graph$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/util/graph/Graph$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pascal/taie/util/graph/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pascal/taie/analysis/Tests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/pascal/taie/analysis/dataflow/analysis/LiveVarTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/pascal.taie.analysis.dataflow.analysis.LiveVarTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/pascal.taie.analysis.dataflow.analysis.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Array-livevar-expected.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Array.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Assign-livevar-expected.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Assign.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Branch-livevar-expected.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Branch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/BranchLoop-livevar-expected.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/BranchLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Fibonacci-livevar-expected.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Fibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Reference-livevar-expected.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/dataflow/livevar/Reference.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-pascal.taie.analysis.dataflow.analysis.LiveVarTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output/Assign._init_().dot" beforeDir="false" afterPath="$PROJECT_DIR$/output/Assign._init_().dot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/Assign.assign(int,int,int).dot" beforeDir="false" afterPath="$PROJECT_DIR$/output/Assign.assign(int,int,int).dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/options.yml" beforeDir="false" afterPath="$PROJECT_DIR$/output/options.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +96,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Static_Analysis_HW/A1/tai-e" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../A2/tai-e" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -109,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670672586267</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finished Task 1">
+      <created>1670681437720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670681437720</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,10 +192,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="418" y="247" width="442" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1670585672432" />
-    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1670680658517">
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1670682058166">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1670680658517" />
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1670682058166" />
     <state width="1238" height="190" key="GridCell.Tab.0.bottom" timestamp="1670551941347">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -177,10 +216,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1670680431008" />
-    <state x="233" y="113" key="Vcs.Push.Dialog.v2" timestamp="1670672607901">
+    <state x="233" y="113" key="Vcs.Push.Dialog.v2" timestamp="1670681467703">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="233" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1670672607901" />
+    <state x="233" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1670681467703" />
     <state x="370" y="136" key="refactoring.ChangeSignatureDialog" timestamp="1670637589043">
       <screen x="0" y="0" width="1280" height="760" />
     </state>

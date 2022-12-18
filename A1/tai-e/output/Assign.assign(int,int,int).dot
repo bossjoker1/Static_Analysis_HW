@@ -1,5 +1,5 @@
 digraph G {
-  node [shape=box,style=filled,color=".3 .2 1.0",];
+  node [color=".3 .2 1.0",style=filled,shape=box,];
   "0" [label="Entry<Assign: int assign(int,int,int)>",];
   "1" [label="0: d = a + b",];
   "2" [label="1: b = d",];
