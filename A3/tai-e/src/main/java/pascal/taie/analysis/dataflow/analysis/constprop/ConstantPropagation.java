@@ -57,18 +57,27 @@ public class ConstantPropagation extends
     @Override
     public CPFact newBoundaryFact(CFG<Stmt> cfg) {
         // TODO - finish me
-        return null;
+        CPFact res = new CPFact();
+        cfg.getIR().getParams().forEach(var -> {
+            if (canHoldInt(var)) {
+                res.update(var, Value.getNAC());
+            }
+        });
+        return res;
     }
 
     @Override
     public CPFact newInitialFact() {
         // TODO - finish me
-        return null;
+        return new CPFact();
     }
 
     @Override
     public void meetInto(CPFact fact, CPFact target) {
         // TODO - finish me
+        fact.forEach((var, val) ->{
+            target.update(var, meetValue(val, target.get(var)));
+        });
     }
 
     /**
@@ -76,13 +85,54 @@ public class ConstantPropagation extends
      */
     public Value meetValue(Value v1, Value v2) {
         // TODO - finish me
-        return null;
+        // follow the slides p238
+        if (v1.isNAC() || v2.isNAC()) {
+            return Value.getNAC();
+        }
+        if (v1.isUndef() && v2.isConstant()) {
+            return Value.makeConstant(v2.getConstant());
+        }
+        if (v2.isUndef() && v1.isConstant()) {
+            return Value.makeConstant(v1.getConstant());
+        }
+        if (v1.isConstant() && v2.isConstant()) {
+            if (v1.equals(v2)) {
+                return Value.makeConstant(v1.getConstant());
+            } else {
+                return Value.getNAC();
+            }
+        }
+
+        return Value.getUndef();
     }
 
     @Override
     public boolean transferNode(Stmt stmt, CPFact in, CPFact out) {
         // TODO - finish me
-        return false;
+        boolean flag = false;
+        CPFact temp = in.copy();
+
+        if(stmt instanceof DefinitionStmt<?, ?> s){
+            // kill and gen
+            if(s.getLValue() instanceof Var var && canHoldInt(var)){
+                temp.remove(var);
+                Value gen = evaluate(s.getRValue(), in);
+                temp.update(var, gen);
+            }
+            if(!out.equals(temp)){
+                temp.forEach(out::update);
+//                temp.forEach((var, val) ->{
+//                    out.update(var, val);
+//                });
+                flag = true;
+            }
+        }else{
+            if(!out.equals(in)){
+                in.forEach((out::update));
+                flag = true;
+            }
+        }
+        return flag;
     }
 
     /**
@@ -112,6 +162,102 @@ public class ConstantPropagation extends
      */
     public static Value evaluate(Exp exp, CPFact in) {
         // TODO - finish me
-        return null;
+        // follow the slides p247
+        // here is just one expression, so we just get with 0 idx.
+        if (exp instanceof IntLiteral e) {
+            return Value.makeConstant(e.getValue());
+        } else if (exp instanceof Var v) {
+            return in.get(v);
+        } else if (exp instanceof BinaryExp bi) {
+            Value a = in.get(bi.getOperand1());
+            Value b = in.get(bi.getOperand2());
+            // to pass the special testcase
+            if (a.isNAC() && b.isConstant()){
+                int i2 = b.getConstant();
+                if (bi.getOperator() instanceof ArithmeticExp.Op op) {
+                    // hint: special case
+                    if ((op == ArithmeticExp.Op.DIV || op == ArithmeticExp.Op.REM) && i2 == 0) {
+                        return Value.getUndef();
+                    }
+                }
+            }
+            if (a.isConstant() && b.isConstant()) {
+                int i1 = a.getConstant(), i2 = b.getConstant();
+                if (bi.getOperator() instanceof ArithmeticExp.Op op) {
+                    // hint: special case
+                    if ((op == ArithmeticExp.Op.DIV || op == ArithmeticExp.Op.REM) && i2 == 0) {
+                        return Value.getUndef();
+                    }
+                    switch (op) {
+                        case ADD -> {
+                            return Value.makeConstant(i1 + i2);
+                        }
+                        case SUB -> {
+                            return Value.makeConstant(i1 - i2);
+                        }
+                        case DIV -> {
+                            return Value.makeConstant(i1 / i2);
+                        }
+                        case MUL -> {
+                            return Value.makeConstant(i1 * i2);
+                        }
+                        case REM -> {
+                            return Value.makeConstant(i1 % i2);
+                        }
+                    }
+                } else if (bi.getOperator() instanceof BitwiseExp.Op op) {
+                    switch (op) {
+                        case OR -> {
+                            return Value.makeConstant(i1 | i2);
+                        }
+                        case AND -> {
+                            return Value.makeConstant(i1 & i2);
+                        }
+                        case XOR -> {
+                            return Value.makeConstant(i1 ^ i2);
+                        }
+                    }
+                } else if (bi.getOperator() instanceof ShiftExp.Op op) {
+                    switch (op) {
+                        case SHL -> {
+                            return Value.makeConstant(i1 << i2);
+                        }
+                        case SHR -> {
+                            return Value.makeConstant(i1 >> i2);
+                        }
+                        case USHR -> {
+                            return Value.makeConstant(i1 >>> i2);
+                        }
+                    }
+                } else if (bi.getOperator() instanceof ConditionExp.Op op) {
+                    // 1 for true, o for false
+                    switch (op) {
+                        case EQ -> {
+                            return Value.makeConstant(i1 == i2 ? 1 : 0);
+                        }
+                        case NE -> {
+                            return Value.makeConstant(i1 != i2 ? 1 : 0);
+                        }
+                        case LT -> {
+                            return Value.makeConstant(i1 < i2 ? 1 : 0);
+                        }
+                        case GT -> {
+                            return Value.makeConstant(i1 > i2 ? 1 : 0);
+                        }
+                        case LE -> {
+                            return Value.makeConstant(i1 <= i2 ? 1 : 0);
+                        }
+                        case GE -> {
+                            return Value.makeConstant(i1 >= i2 ? 1 : 0);
+                        }
+                    }
+                }
+            }else if(a.isNAC() || b.isNAC()){
+                return Value.getNAC();
+            }else{
+                return Value.getUndef();
+            }
+        }
+        return Value.getNAC();
     }
 }

@@ -25,8 +25,11 @@ package pascal.taie.analysis.dataflow.analysis;
 import pascal.taie.analysis.dataflow.fact.SetFact;
 import pascal.taie.analysis.graph.cfg.CFG;
 import pascal.taie.config.AnalysisConfig;
+import pascal.taie.ir.exp.RValue;
 import pascal.taie.ir.exp.Var;
 import pascal.taie.ir.stmt.Stmt;
+
+import java.util.List;
 
 /**
  * Implementation of classic live variable analysis.
@@ -48,23 +51,59 @@ public class LiveVariableAnalysis extends
     @Override
     public SetFact<Var> newBoundaryFact(CFG<Stmt> cfg) {
         // TODO - finish me
-        return null;
+        // Stmt exit = cfg.getExit();
+        return new SetFact<Var>();
     }
 
     @Override
     public SetFact<Var> newInitialFact() {
         // TODO - finish me
-        return null;
+        return new SetFact<Var>();
     }
 
     @Override
     public void meetInto(SetFact<Var> fact, SetFact<Var> target) {
         // TODO - finish me
+        if (target != null){
+            target.union(fact);
+        }
     }
 
     @Override
     public boolean transferNode(Stmt stmt, SetFact<Var> in, SetFact<Var> out) {
         // TODO - finish me
-        return false;
+        // ExpVisitor<Var> visitor = null;
+        SetFact<Var> def = new SetFact<Var>();
+        Var left = null;
+        if (stmt.getDef().isPresent()) {
+            if (stmt.getDef().get() instanceof Var){
+                left = (Var) stmt.getDef().get();
+            }
+            if (left != null) {
+                def.add(left);
+            }
+        }
+
+        SetFact<Var> used = new SetFact<Var>();
+        List<RValue> rvalues = stmt.getUses();
+        for (RValue r : rvalues){
+            if (r instanceof Var) {
+                used.add((Var) r);
+            }
+        }
+        if (out != null) {
+            var temp = out.copy();
+            temp.remove(left);
+            used.union(temp);
+        }
+
+
+        if (in.equals(used)){
+            return false;
+        }else{
+            // in = used.copy();  //wrong! 主要是因为自己不是Java语言使用者
+            in.set(used);
+            return true;
+        }
     }
 }
